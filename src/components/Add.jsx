@@ -7,6 +7,7 @@ import ImageIcon from '@mui/icons-material/Image';
 import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import DateRangeIcon from '@mui/icons-material/DateRange';
+import profile from "../Images/profile.jpg";
 
 const StyleModal = styled(Modal)({
     display: 'flex',
@@ -49,7 +50,7 @@ const Add = () => {
                 <UserBox>
                     <Avatar
                     sx={{width:30, height: 30}}
-                    src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg'
+                    src={profile}
                 />
                     <Typography fontWeight={500} variant='span'>Rv's</Typography>
                 </UserBox>

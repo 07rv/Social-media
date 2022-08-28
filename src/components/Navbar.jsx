@@ -3,6 +3,7 @@ import { AppBar, Avatar, Badge, Box, InputBase, styled,
   Toolbar, Typography, Menu, MenuItem } from '@mui/material'
 import { Pets, Notifications } from '@mui/icons-material'
 import MailIcon from '@mui/icons-material/Mail';
+import profile from "../Images/profile.jpg";
 
 const StyleToolbar = styled(Toolbar)({
   display: "flex",
@@ -55,14 +56,14 @@ const Navbar = () => {
           </Badge>
           <Avatar
             sx={{width:30, height: 30}}
-            src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg'
+            src={profile}
             onClick={e=>setOpen(true)}
           />
         </Icons>
         <UserBox onClick={e=>setOpen(true)}>
           <Avatar
             sx={{width:30, height: 30}}
-            src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg'
+            src= {profile}
           />
           <Typography variant='span'>Rv's</Typography>
         </UserBox>

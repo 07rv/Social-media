@@ -3,18 +3,23 @@ import { Box, ImageList, ImageListItem, Typography,ImageListItemBar,
   List,  ListItemText,Divider, ListItemAvatar, ListItem} from '@mui/material'
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
+import RemySharp from "../Images/RemySharp.jpeg"; 
+import TravisHoward from "../Images/TravisHoward.jpg";
+import CindyBaker from "../Images/CindyBaker.jpeg";
+import AgnesWalker from "../Images/AgnesWalker.jpeg";
+import TrevorHenderson from "../Images/TrevorHenderson.jpeg";
 
 const Rightbar = () => {
   return (
     <Box flex={2} p={2} sx={{display:{xs:"none", sm:"block"}}}>
       <Box width={300}>
         <Typography variant='h6' fontWeight={100}>Online Friends</Typography>
-        <AvatarGroup max={4}>
-          <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/12581576/pexels-photo-12581576.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
-          <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/13085461/pexels-photo-13085461.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
-          <Avatar alt="Cindy Baker" src="https://images.pexels.com/photos/13244387/pexels-photo-13244387.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
-          <Avatar alt="Agnes Walker" src="https://images.pexels.com/photos/13338230/pexels-photo-13338230.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
-          <Avatar alt="Trevor Henderson" src="https://images.pexels.com/photos/12928872/pexels-photo-12928872.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
+        <AvatarGroup max={10}>
+          <Avatar alt="Remy Sharp" src={RemySharp} />
+          <Avatar alt="Travis Howard" src={TravisHoward} />
+          <Avatar alt="Cindy Baker" src={CindyBaker} />
+          <Avatar alt="Agnes Walker" src={AgnesWalker} />
+          <Avatar alt="Trevor Henderson" src={TrevorHenderson} />
         </AvatarGroup>
 
         <Typography variant='h6' fontWeight={100}>Posts</Typography>
@@ -23,8 +28,8 @@ const Rightbar = () => {
           <ImageListItem sx={{m:0.5}}>
           <img
             width="10px" height="600"
-            src={`${"https://images.pexels.com/photos/13085461/pexels-photo-13085461.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format`}
-            srcSet={`${"https://images.pexels.com/photos/13085461/pexels-photo-13085461.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format&dpr=2 2x`}
+            src={`${TravisHoward}?w=300&fit=crop&auto=format`}
+            srcSet={`${TravisHoward}?w=300&fit=crop&auto=format&dpr=2 2x`}
             alt={"RVhuui"}
             loading="lazy"
           />
@@ -36,8 +41,8 @@ const Rightbar = () => {
 
           <ImageListItem sx={{m:0.5}}>
           <img
-            src={`${"https://images.pexels.com/photos/13338230/pexels-photo-13338230.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format`}
-            srcSet={`${"https://images.pexels.com/photos/13338230/pexels-photo-13338230.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format&dpr=2 2x`}
+            src={`${AgnesWalker}?w=300&fit=crop&auto=format`}
+            srcSet={`${AgnesWalker}?w=300&fit=crop&auto=format&dpr=2 2x`}
             alt={"RVhuui"}
             loading="lazy"
           />
@@ -49,8 +54,8 @@ const Rightbar = () => {
 
           <ImageListItem sx={{m:0.5}} >
           <img
-            src={`${"https://images.pexels.com/photos/13244387/pexels-photo-13244387.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format`}
-            srcSet={`${"https://images.pexels.com/photos/13244387/pexels-photo-13244387.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"}?w=300&fit=crop&auto=format&dpr=2 2x`}
+            src={`${CindyBaker}?w=300&fit=crop&auto=format`}
+            srcSet={`${CindyBaker}?w=300&fit=crop&auto=format&dpr=2 2x`}
             alt={"RVhuui"}
             loading="lazy"
           />
@@ -69,7 +74,7 @@ const Rightbar = () => {
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/13085461/pexels-photo-13085461.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg" />
+              <Avatar alt="Remy Sharp" src={TravisHoward} />
             </ListItemAvatar>
             <ListItemText
               primary="Brunch this weekend?"

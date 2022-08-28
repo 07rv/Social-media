@@ -6,6 +6,7 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import post from "../Images/post.jpeg";
 
 const Post = () => {
   return (
@@ -27,7 +28,7 @@ const Post = () => {
     <CardMedia
       component="img"
       height="250"
-      image="https://images.pexels.com/photos/13350114/pexels-photo-13350114.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.jpg"
+      image={post}
       alt="Paella dish"
     />
     <CardContent>
